@@ -1,0 +1,16 @@
+{
+  "name": "test1",
+  "version": "0.0.0",
+  "description": "project test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jeremie lodi",
+  "license": "ISC",
+  "dependencies": {
+    "connect-flash": "^0.1.1",
+    "mysql": "^2.13.0",
+    "passport": "^0.3.2"
+  }
+}

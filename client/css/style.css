@@ -1,0 +1,19 @@
+
+table{
+    width:500px;
+    border:1px solid #aaa;
+    box-shadow: 1px 2px 3px #ddd;
+    background:#aaa;
+}
+td, th{
+  background:#fff
+}
+
+.btn{
+      margin-left:400px;
+      margin-top: 20px
+}
+
+h1{
+  color: red
+}
