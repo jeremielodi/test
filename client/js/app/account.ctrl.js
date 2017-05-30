@@ -1,7 +1,8 @@
-app.controller('accountCtrl', function($scope, $http) {
+
+app.controller('accountCtrl',function($scope, $http, params) {
 
 //the server IP
-$scope.server="http://localhost:4000/";
+$scope.server=params.serverAdress; 
 
 //variable that contains the user's list
 $scope.users=[];
