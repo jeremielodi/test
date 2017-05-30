@@ -22,7 +22,7 @@ services.factory('model', function() {
 
             },
             function(response) {
-                 alert('error')
+                return [];
             });
   }
 

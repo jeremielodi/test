@@ -5,6 +5,9 @@ services.factory('params', function() {
 
   params.serverAdress = "http://127.0.0.1:4000/"; 
 
+  params.alert=function(){
+    alert('good');
+  }
   return params;
 
 });

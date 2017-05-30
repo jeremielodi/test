@@ -32,19 +32,21 @@ user.prototype.findUsers = function(req, res) {
 user.prototype.print=function(req, res){
    
    try{
-    var fileName="index_printed.pdf";
-     var server="http://localhost:4000/";
-    var html="<html><header><title>printing</title> "+
-      "<meta charset='utf-8'/> <link href='"+server+"css/style.css' rel='stylesheet'/></header><body>";
+        var fileName="index_printed.pdf";
 
-    var params=JSON.parse(JSON.stringify(req.body));
-    html+=params.content;
+        var server="http://localhost:4000/";
+        
+        var html="<html><header><title>printing</title> "+
+        "<meta charset='utf-8'/> <link href='"+server+"css/style.css' rel='stylesheet'/></header><body>";
 
-    html+="</body></hml>";
+        var params=JSON.parse(JSON.stringify(req.body));
+        html+=params.content;
 
-  wkhtmltopdf(html).pipe(fs.createWriteStream('repport/'+fileName));
+        html+="</body></hml>";
 
-  res.send(fileName);
+        wkhtmltopdf(html).pipe(fs.createWriteStream('repport/'+fileName));
+
+        res.send(fileName);
 
 
    }catch(ex){
